@@ -1,0 +1,147 @@
+body {
+    background-color: #f5f5dc; 
+}
+
+ul {
+list-style-type: none; 
+}
+
+.titoloni {
+text-align: center; 
+font-family: "Lucida Handwriting", cursive;
+font-size: 250%;
+margin: 0;
+}
+
+.titoloni2{
+text-align: center; 
+font-family: "Lucida Handwriting", cursive;
+font-size: 200%;
+margin-top: -10px;
+margin-bottom: -10px;;
+}
+
+.cose {
+text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+#upper-div {
+    background-color: rgb(230, 240, 255);
+    height: 150px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.casa, .download {
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:  #f5f5dc;
+    font-size: 25px;
+    font-family: "Lucida Handwriting";
+    margin: 0 20px; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.download {
+    right: 10px;
+}
+
+.casa {
+    left: 10px;
+}
+
+.second-courses, .first-courses {
+    content: "\00a0";
+display: inline;
+}
+.casa a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+max-width: 800px;
+max-height: 1000px;
+position: relative;
+margin: auto;
+}
+
+.mySlides {
+display: none;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-size: 18px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+background-color: black;
+}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}

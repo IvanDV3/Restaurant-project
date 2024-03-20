@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+#upper-div {
+    background-color: rgb(230, 240, 255);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.home, .contact, .menu {
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:  #f5f5dc;
+    font-size: 25px;
+    font-family: "Lucida Handwriting";
+    margin: 0 20px; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home {
+    color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #f5f5dc;
+    font-size: 25px;
+    font-family: "Lucida Handwriting";
+    margin: 0 20px; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px; 
+    background-image: url('../PHOTOS/ita.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    padding: 10px 20px; 
+    color: transparent;
+    text-decoration: none;
+}
+
+.home {
+    left: 10px; 
+}
+
+.menu {
+    left: calc(50% - 90px); 
+}
+
+.contact {
+    right: 10px; 
+} 
+
+
+#container {
+    min-height: 190vh; 
+}
+
+
+#content {
+    min-height: 210vh; 
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px; 
+    height: calc(100vh - 150px); 
+}
+
+.left-div > * {
+    flex-shrink: 0;
+}
+
+.left-div, .right-div {
+    flex-grow: 1;
+    background-color:  #f5f5dc;
+    padding: 10px;
+    margin: 0; 
+    width: 50%; 
+    box-sizing: border-box; 
+}
+
+.left-div {
+    margin-right: 2px;
+}
+
+.right-div {
+    background-image: url("../PHOTOS/image.jpg");
+    background-size: cover;
+    margin-left: 0; 
+    width: calc(50% - 2px); 
+}
+
+
+@media screen and (max-width: 768px) {
+    .home, .contact, .menu {
+        padding: 8px 16px;
+        font-size: 20px;
+    }
+    #container {
+        flex-direction: column; 
+    }
+    .left-div, .right-div {
+        width: 100%;
+        min-height: 1280px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        max-height: 2000px; 
+    }
+}
+
+.ristorante, .larotonda, .pizzeria {
+    display: block; 
+    font-size: 80px;
+    margin-top: 40px;
+    margin-left: 20%;
+    font-family: "Brush Script MT", cursive;
+}
+
+.orario {
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.orario2 {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.a {
+    font-family: Arial;
+}
+
+.telefono {
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(44, 213, 83);
+    font-size: 15px;
+    font-family: "Lucida Handwriting";   
+}
+
+.telefono a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.map {
+    margin: 0 auto; 
+    display: block;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.home a{
+    color: transparent;
+    text-decoration: none;
+}
